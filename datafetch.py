@@ -27,7 +27,8 @@ for symbol in from_yahoofinance:
 from_fred = ["M2SL", "FEDFUNDS", "M2V",
             "BOGMBASE"]
 
-fred = fred_object(api_key='b296451576f9df1503841719b3d24ea5')
+api_key = 'b296451576f9df1503841719b3d24ea5'
+fred = fred_object(api_key=api_key)
 for symbol in from_fred:
     historicals[symbol] = fred.get_historical(symbol)
 print(historicals)

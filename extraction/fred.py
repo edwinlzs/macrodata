@@ -1,3 +1,4 @@
+# source: https://github.com/mortada/fredapi
 from fredapi import Fred
 
 class fred_object():
