@@ -1,6 +1,6 @@
 # uses extraction tools to fetch data
-from extraction.yahoofinance import yf_object
-from extraction.fred import fred_object
+from sources.yahoofinance import yf_object
+from sources.fred import fred_object
 import pandas as pd
 import numpy as np
 
