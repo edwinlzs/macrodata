@@ -9,9 +9,9 @@ Base = declarative_base()
 # create database engine
 engine = sqlalchemy.create_engine('mysql+mysqlconnector://root@localhost:3306/macrodata')
 
-# # initialize session
-# Session = sessionmaker()
-# Session.configure(bind=engine)
+# initialize session
+# Session = sessionmaker(bind=engine)
+# session = Session()
 
 # pull data
 start_date = "1991-01-01"
