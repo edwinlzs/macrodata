@@ -24,6 +24,8 @@ from_yahoofinance = {"S&P500":"SPY", "NASDAQ Composite":"^IXIC", "FTSE100":"^FTS
 from_fred = {"M2 Money Supply":"M2SL", "M2 Money Velocity":"M2V", "Federal Funds Rate":"FEDFUNDS",
                 "Monetary Base Total":"BOGMBASE", "Personal Consumption Expenditures":"PCEPI"}
 
+sources = [from_yahoofinance, from_fred]
+
 def fetch_data(start_date, end_date, interval):
     # yahoofinance data types available: open, high, low, close, volume, dividends, stock_splits
     # yahoofinance data available: S&P500, NASDAQ Composite, FTSE100,

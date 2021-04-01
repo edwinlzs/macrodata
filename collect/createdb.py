@@ -1,7 +1,7 @@
 # script to create tables in database
 import sqlalchemy as db
 from sqlalchemy_utils import database_exists, create_database
-from database.DBobjects import Macro_Data, meta
+from database.macrodata_db import Macro_Data, meta
 from datafetch import from_yahoofinance, from_fred
 
 # use in SQL to create scheme: CREATE DATABASE IF NOT EXISTS macrodata DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
