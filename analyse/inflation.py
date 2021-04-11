@@ -13,8 +13,6 @@ commodities = [
     'Wheat Futures', 'Corn Futures', 'Soybean Futures', 'Sugar #11 Futures', 'Oat Futures', 'Rough Rice Futures'
 ]
 
-
-
 for commodity in commodities:
     commodity = commodity.lower()
     price_data = retrieve_data(commodity) # retrieve from database
