@@ -6,7 +6,7 @@ import numpy as np
 
 historicals = {}
 
-from_yahoofinance = {"S&P500":"SPY", "NASDAQ Composite":"^IXIC", "FTSE100":"^FTSE", "Hang Seng Index":"^HSI",
+from_yahoofinance = {"SP500":"SPY", "NASDAQ Composite":"^IXIC", "FTSE100":"^FTSE", "Hang Seng Index":"^HSI",
                         # equities
                         "SZSE Composite":"399106.SZ", "SSE Composite":"000001.SS",
                         # bonds
@@ -17,7 +17,7 @@ from_yahoofinance = {"S&P500":"SPY", "NASDAQ Composite":"^IXIC", "FTSE100":"^FTS
                         "Crude Oil Futures":"CL=F", "Natural Gas Futures":"NG=F",
                         # commodities: agriculture
                         "Feeder Cattle Futures":"GF=F", "Live Cattle Futures":"LE=F", "Cocoa Futures":"CC=F", "Lumber Futures":"LBS=F",
-                        "Cotton Futures":"CT=F", "Wheat Futures":"ZW=F", "Corn Futures":"ZC=F", "Soybean Futures":"ZS=F", "Sugar #11 Futures":"SB=F",
+                        "Cotton Futures":"CT=F", "Wheat Futures":"ZW=F", "Corn Futures":"ZC=F", "Soybean Futures":"ZS=F", "Sugar no11 Futures":"SB=F",
                         "Oat Futures":"ZO=F", "Rough Rice Futures":"ZR=F"
                         }
 

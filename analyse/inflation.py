@@ -20,16 +20,20 @@ commodities = [
 ]
 
 end_date = dt.date.today() - BDay(1)
-start_date = end_date - relativedelta(years=5) - BDay(1) # -1 BDay to ensure start_date is on a trading day
+start_date = end_date - relativedelta(years=10) - BDay(1) # -1 BDay to ensure start_date is on a trading day
 
-ix = pd.bdate_range(start=start_date, end=end_date, freq='B')
+ix = pd.date_range(start_date, periods=12*10, freq="M")
 normalized_df = pd.DataFrame(index=ix)
 
 for commodity in commodities:
     commodity = commodity.lower()
     price_data = retrieve_data(commodity) # retrieve from database
 
-    start_price = price_data.loc[start_date]
-    normalized_df[commodity] = price_data[price_data.index >= start_date]/start_price
+    # start_price = price_data.loc[start_date]
+    # normalized_df[commodity] = price_data[price_data.index >= start_date]/start_price
+
+
+
+    
 
 print(normalized_df)

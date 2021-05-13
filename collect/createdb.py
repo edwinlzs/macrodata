@@ -11,11 +11,11 @@ engine = db.create_engine('mysql+mysqlconnector://root@localhost:3306/macrodata'
 
 # create database
 
-if not database_exists(engine.url):
-    create_database(engine.url)
-    print("Created database.")
-else:
-    print("Database found, creating tables now.")
+# if not database_exists(engine.url):
+#     create_database(engine.url)
+#     print("Created database.")
+# else:
+#     print("Database found, creating tables now.")
 
 # create table objects
 for name in from_yahoofinance:
